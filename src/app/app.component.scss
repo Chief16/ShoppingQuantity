@@ -1,0 +1,24 @@
+.container-fluid {
+  padding: 0 8rem;
+}
+
+.btn-cart {
+  position: relative;
+}
+
+.cart-badge {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  padding: 0.1rem 0.45rem;
+  border-radius: 50%;
+  background-color: red;
+  color: white;
+  font-size: 12px;
+}
+
+.navbar {
+  position: sticky;
+  top: .1px;
+  z-index: 1000;
+}

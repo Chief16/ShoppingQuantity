@@ -1,0 +1,30 @@
+<div class="modal-header">
+  <h4 class="modal-title">Shopping Cart</h4>
+  <button type="button" class="btn-close" aria-label="Close" (click)="activeModal.dismiss('Cross click')"></button>
+</div>
+<div class="modal-body">
+  <ng-container *ngFor="let item of cartItems">
+    <div class="cart-item-details">
+      <div class="row">
+        <label class="col-sm-3 fw-bold col-form-label text-bold">Name:</label>
+        <label class="col-sm-9 col-form-label">{{ item.name }}</label>
+      </div>
+      <div class="row">
+        <label class="col-sm-3 fw-bold col-form-label">Price:</label>
+        <label class="col-sm-9 col-form-label">{{ item.currency }}{{ item.price }}</label>
+      </div>
+      <div class="row">
+        <label class="col-sm-3 fw-bold col-form-label">Quantity:</label>
+        <label class="col-sm-9 col-form-label">{{ item.selectedQuantity }}</label>
+      </div>
+      <div class="row">
+        <label class="col-sm-3 fw-bold col-form-label">Total Price: </label>
+        <label class="col-sm-9 col-form-label">{{ item.currency }}{{ item.price * item.selectedQuantity }}</label>
+      </div>
+    </div>
+    <hr>
+  </ng-container>
+</div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-outline-secondary" (click)="activeModal.close('Close click')">Close</button>
+</div>

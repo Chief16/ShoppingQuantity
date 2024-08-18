@@ -1,0 +1,55 @@
+.products {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem 8rem;
+  width: 100%;
+  flex-wrap: wrap;
+
+  .card {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    img {
+      width: 28%;
+    }
+
+    .description {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    .price-container {
+      margin-top: 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      flex-grow: 1;
+
+      .price {
+        font-size: 2rem;
+      }
+
+      .ogPriceLabel {
+        color: #cacaca;
+        .ogPrice {
+          text-decoration: line-through;
+        }
+      }
+
+    }
+
+    .addToCart {
+      width: 20%;
+    }
+
+    #quantity {
+      margin-left: .5rem;
+    }
+
+    button {
+      width: 100%;
+      margin-top: .5rem;
+    }
+  }
+}
